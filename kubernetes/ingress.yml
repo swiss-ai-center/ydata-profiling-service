@@ -7,16 +7,16 @@ metadata:
     nginx.org/client-max-body-size: "16m"
 spec:
   rules:
-  - host: my-service.example.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: my-service-service
-            port:
-              number: 80
+    - host: my-service.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-service-service
+                port:
+                  number: 80
   tls:
     - hosts:
         - my-service.example.com
