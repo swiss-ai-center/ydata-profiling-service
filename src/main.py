@@ -65,6 +65,7 @@ class MyService(Service):
                 ),
             ],
             has_ai=False,
+            docs_url="https://docs.swiss-ai-center.ch/reference/services/ydata-profiling/",
         )
         self._logger = get_logger(settings)
 
