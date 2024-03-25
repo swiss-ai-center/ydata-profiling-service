@@ -1,4 +1,4 @@
 common-code[test] @ git+https://github.com/swiss-ai-center/common-code.git@main
-numpy==1.24.1
-ydata-profiling==4.6.1
-pandas==2.0.3
+numpy==1.26.4
+ydata-profiling==4.7.0
+pandas==2.2.1
