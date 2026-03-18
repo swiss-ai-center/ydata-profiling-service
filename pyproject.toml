@@ -1,6 +1,15 @@
 [project]
-name = "ydata-profiling"
+name = "ydata-profiling-service"
+version = "1.0.0"
 
+requires-python = "==3.10"
+dependencies = [
+    "common-code[test] @ git+https://github.com/swiss-ai-center/common-code.git@main",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "setuptools<82.0.0",
+    "ydata-profiling>=4.18.1",
+]
 [tool.pytest.ini_options]
 pythonpath = [".", "src"]
 addopts = "--cov-config=.coveragerc --cov-report xml --cov-report term-missing --cov=./src"
