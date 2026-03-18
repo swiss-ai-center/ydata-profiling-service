@@ -84,4 +84,3 @@ class MyService(Service):
                     type=FieldDescriptionType.APPLICATION_ZIP,
                 )
             }
-
